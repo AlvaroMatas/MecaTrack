@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //Le da un valor de id MySQL y no Java
     private Long id; //atributo de id
 
     @Column(nullable = false, unique = true, length = 150)
